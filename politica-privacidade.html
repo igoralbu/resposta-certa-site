@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Resposta Certa</title>
+<style>
+  body { font-family: sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; line-height: 1.7; color: #1a1917; }
+  h1 { font-size: 24px; margin-bottom: 6px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  p, li { font-size: 15px; color: #444; }
+  ul { padding-left: 20px; }
+  .updated { font-size: 13px; color: #999; margin-bottom: 32px; }
+  a { color: #1D9E75; }
+</style>
+</head>
+<body>
+<h1>Política de Privacidade</h1>
+<p class="updated">Última atualização: julho de 2026 (v2)</p>
+
+<h2>1. Sobre a extensão</h2>
+<p>Resposta Certa é uma extensão para navegadores Chrome que permite criar e inserir respostas prontas em campos de texto de qualquer site.</p>
+
+<h2>2. Dados armazenados localmente</h2>
+<p>Os dados gerados pelo usuário — templates, categorias e preferências — são salvos exclusivamente no armazenamento local do próprio navegador (<code>chrome.storage.local</code>), no dispositivo do usuário. Esses dados nunca são transmitidos a servidores externos.</p>
+
+<h2>3. Dados de uso anônimos (Analytics)</h2>
+<p>A extensão coleta eventos de uso anônimos via Google Analytics 4 (Measurement Protocol) para fins de melhoria do produto. Nenhum dado pessoal ou conteúdo de templates é enviado. Os eventos coletados são:</p>
+<ul>
+  <li>Instalação da extensão</li>
+  <li>Criação de templates</li>
+  <li>Inserção de templates (incluindo a plataforma — ex: WhatsApp Web, Gmail)</li>
+  <li>Escolha de nicho no onboarding</li>
+  <li>Atingimento de limites do plano gratuito</li>
+</ul>
+<p>Cada instalação recebe um identificador aleatório (<code>client_id</code>), gerado localmente e sem vínculo com dados pessoais.</p>
+
+<h2>4. Dados que NÃO coletamos</h2>
+<ul>
+  <li>Dados pessoais de identificação (exceto o e-mail fornecido voluntariamente ao solicitar a Versão Pro — veja a seção 4.1)</li>
+  <li>Conteúdo dos campos de texto onde a extensão é utilizada</li>
+  <li>Conteúdo dos templates criados pelo usuário</li>
+  <li>Histórico de navegação</li>
+</ul>
+
+<h2>4.1 Lista de interesse na Versão Pro</h2>
+<p>Na tela de Configurações, o botão "Solicitar Versão Pro" abre um formulário opcional onde o usuário pode digitar seu e-mail para ser avisado quando a Versão Pro estiver disponível. Esse envio só acontece se o usuário preencher o campo e clicar em enviar — nunca automaticamente. O e-mail informado é enviado a um formulário Google (Google LLC), que o armazena numa planilha privada de acesso restrito ao desenvolvedor da extensão. Ele é usado exclusivamente para avisar sobre o lançamento da Versão Pro e não é vinculado a templates, uso da extensão ou aos eventos anônimos de analytics descritos na seção 3.</p>
+
+<h2>5. Permissões utilizadas</h2>
+<ul>
+  <li><strong>storage</strong> — para salvar templates e preferências localmente no navegador</li>
+  <li><strong>clipboardWrite / clipboardRead</strong> — usadas internamente para inserir texto em editores avançados (como WhatsApp Web), que exigem colar via área de transferência. Antes de colar o template, a extensão lê o conteúdo atual da área de transferência apenas para devolvê-lo logo em seguida, evitando apagar algo que o usuário tinha copiado. Esse conteúdo passa apenas pela memória do navegador — nunca é armazenado nem enviado a qualquer servidor</li>
+  <li><strong>Script injetado em todas as páginas</strong> — para detectar campos de texto e exibir o menu de templates ao digitar "/" em qualquer site</li>
+</ul>
+
+<h2>6. Compartilhamento de dados</h2>
+<p>Nenhum dado identificável é compartilhado com terceiros, com uma exceção: se o usuário optar por solicitar a Versão Pro informando seu e-mail (seção 4.1), esse e-mail é enviado ao Google Forms. Os eventos de analytics são enviados ao Google Analytics 4 de forma anônima, conforme descrito na seção 3.</p>
+
+<h2>7. Contato</h2>
+<p>Dúvidas sobre esta política podem ser enviadas para <a href="mailto:contato@respostacerta.app">contato@respostacerta.app</a>.</p>
+</body>
+</html>
